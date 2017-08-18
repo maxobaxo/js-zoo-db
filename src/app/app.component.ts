@@ -14,5 +14,8 @@ export class AppComponent {
     new Animal('Flamingo', 'Rick', 1, 'Algae & Brine Shrimp', 'Tropical Area', 1, 'M', 'Sleeping', 'Being Startled')
   ]
 
+  newAnimal(newAnimalFromChild: Animal) {
+   this.masterAnimalList.push(newAnimalFromChild);
+ }
 
 }
