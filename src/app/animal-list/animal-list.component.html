@@ -1,4 +1,10 @@
-<ul *ngFor="let currentAnimal of childAnimalList">
+<select (change)="onChange($event.target.value)">
+  <option value="All Animals" selected="selected">All Animals</option>
+  <option value="Young Animals">Young Animals</option>
+  <option value="Mature Animals">Mature Animals</option>
+</select>
+
+<ul *ngFor="let currentAnimal of childAnimalList | ageist:filterByAge">
   <h3>{{currentAnimal.name}}</h3>
   <button (click)="editButtonClicked(currentAnimal)">Edit</button>
     <li>{{currentAnimal.species}}</li>

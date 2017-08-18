@@ -1,8 +1,13 @@
 <div class="container">
+
   <div class="jumbotron">
     <h1>{{title}}</h1>
   </div>
+
   <add-animal (addAnimalSender)="newAnimal($event)"></add-animal>
+
   <edit-animal [childSelectedAnimal]="selectedAnimal" (editCompleteSender)="editComplete()"></edit-animal>
+
   <animal-list [childAnimalList]="masterAnimalList" (editButtonClickedSender)="editAnimal($event)"></animal-list>
+
 </div>

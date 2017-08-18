@@ -14,6 +14,12 @@ export class AnimalListComponent implements OnInit {
     this.editButtonClickedSender.emit(currentAnimal);
   }
 
+  filterByAge: string = "allAnimals";
+
+  onChange(optionFromMenu) {
+    this.filterByAge = optionFromMenu;
+  }
+
   ngOnInit() {
   }
 
