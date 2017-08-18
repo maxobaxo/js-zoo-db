@@ -1,43 +1,56 @@
-<div *ngIf="addAnimal===false">
-  <button (click)="addNewAnimal()">Add New Animal</button>
-</div>
-<div *ngIf="addAnimal===true">
-  <h2>New Animal</h2>
-  <div class="form-group">
-    <label>Species</label>
-    <input #newSpecies>
+<div class="align-center">
+  <div *ngIf="addAnimal===false">
+    <button (click)="addNewAnimal()" class="btn">Add New Animal</button>
   </div>
-  <div class="form-group">
-    <label>Name</label>
-    <input #newName>
-  </div>
-  <div class="form-group">
-    <label>Age</label>
-    <input #newAge>
-  </div>
-  <div class="form-group">
-    <label>Diet</label>
-    <input #newDiet>
-  </div>
-  <div class="form-group">
-    <label>Location</label>
-    <input #newLocation>
-  </div>
-  <div class="form-group">
-    <label>Caretakers Needed</label>
-    <input #newCaretakersNeeded>
-  </div>
-  <div class="form-group">
-    <label>Sex</label>
-    <input #newSex>
-  </div>
-  <div class="form-group">
-    <label>Like</label>
-    <input #newLike>
-  </div>
-  <div class="form-group">
-    <label>Dislike</label>
-    <input #newDislike>
-    <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakersNeeded.value, newSex.value, newLike.value, newDislike.value)">Add</button>
+  <div *ngIf="addAnimal===true" class="well">
+    <h2>New Animal</h2>
+    <div class="flex-container">
+      <div class="flex-item">
+        <div class="form-group">
+          <input #newSpecies placeholder="Species">
+        </div>
+      </div>
+      <div class="flex-item">
+        <div class="form-group">
+          <input #newName placeholder="Name">
+        </div>
+      </div>
+      <div class="flex-item">
+        <div class="form-group">
+          <input #newAge placeholder="Age">
+        </div>
+      </div>
+      <div class="flex-item">
+        <div class="form-group">
+          <input #newDiet placeholder="Diet">
+        </div>
+      </div>
+      <div class="flex-item">
+        <div class="form-group">
+          <input #newLocation placeholder="Location">
+        </div>
+      </div>
+      <div class="flex-item">
+        <div class="form-group">
+          <input #newCaretakersNeeded placeholder="Caretakers">
+        </div>
+      </div>
+      <div class="flex-item">
+        <div class="form-group">
+          <input #newSex placeholder="Sex">
+        </div>
+      </div>
+      <div class="flex-item">
+        <div class="form-group">
+          <input #newLike placeholder="Like">
+        </div>
+      </div>
+      <div class="flex-item">
+        <div class="form-group">
+          <input #newDislike placeholder="Dislike">
+        </div>
+      </div>
+    </div>
+    <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakersNeeded.value, newSex.value, newLike.value, newDislike.value)" class="btn">Add</button>
   </div>
 </div>

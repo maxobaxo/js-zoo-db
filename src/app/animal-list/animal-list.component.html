@@ -1,15 +1,30 @@
-<select (change)="onChange($event.target.value)">
-  <option value="All Animals" selected="selected">All Animals</option>
-  <option value="Young Animals">Young Animals</option>
-  <option value="Mature Animals">Mature Animals</option>
-</select>
+<div class="well">
+  <div class="align-center">
+    <select (change)="onChange($event.target.value)">
+      <option value="All Animals" selected="selected">All Animals</option>
+      <option value="Young Animals">Young Animals</option>
+      <option value="Mature Animals">Mature Animals</option>
+    </select>
+  </div>
 
-<ul *ngFor="let currentAnimal of childAnimalList | ageist:filterByAge">
-  <h3>{{currentAnimal.name}}</h3>
-  <button (click)="editButtonClicked(currentAnimal)">Edit</button>
-    <li>{{currentAnimal.species}}</li>
-    <li>{{currentAnimal.age}} years old</li>
-    <li>Likes: {{currentAnimal.like}}</li>
-    <li>Dislikes: {{currentAnimal.dislike}}</li>
-    <!-- <button (click)="sellPintButtonClicked(currentAnimal)">Sell A Pint</button> -->
-</ul>
+  <div class="flex-container">
+    <ul *ngFor="let currentAnimal of childAnimalList | ageist:filterByAge" class="list-unstyled">
+      <div class="flex-item">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>{{currentAnimal.name}}</h3>
+          </div>
+          <div class="panel-body">
+            <li>{{currentAnimal.species}}</li>
+            <li>{{currentAnimal.age}} years old</li>
+            <li>Likes: {{currentAnimal.like}}</li>
+            <li>Dislikes: {{currentAnimal.dislike}}</li>
+          </div>
+          <div class="panel-footer">
+            <button (click)="editButtonClicked(currentAnimal)" class="btn">Edit</button>
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+</div>

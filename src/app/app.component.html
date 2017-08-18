@@ -5,9 +5,9 @@
   </div>
 
   <add-animal (addAnimalSender)="newAnimal($event)"></add-animal>
-
+  <br>
   <edit-animal [childSelectedAnimal]="selectedAnimal" (editCompleteSender)="editComplete()"></edit-animal>
-
+  <br>
   <animal-list [childAnimalList]="masterAnimalList" (editButtonClickedSender)="editAnimal($event)"></animal-list>
 
 </div>

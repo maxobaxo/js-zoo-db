@@ -1,0 +1,33 @@
+.panel-heading {
+  background-color: lightblue;
+}
+.panel-body {
+
+}
+
+.panel-footer {
+  background-color: lightblue;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  /*border: 2px solid black;*/
+  margin: 10px;
+  min-width: 250px;
+  max-width: 300px;
+  word-break: normal;
+}
+
+.panel-body {
+
+}
+
+.btn {
+  background-color: white;
+  border: solid black 1px;
+}
