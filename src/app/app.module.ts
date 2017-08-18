@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AnimalListComponent } from './animal-list/animal-list.component';
 import { AddAnimalComponent } from './add-animal/add-animal.component';
+import { EditAnimalComponent } from './edit-animal/edit-animal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AnimalListComponent,
-    AddAnimalComponent
+    AddAnimalComponent,
+    EditAnimalComponent
   ],
   imports: [
     BrowserModule,
