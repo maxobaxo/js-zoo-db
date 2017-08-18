@@ -1,13 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
+import { Animal } from './../animal.model';
 
 @Component({
-  selector: 'app-edit-animal',
+  selector: 'edit-animal',
   templateUrl: './edit-animal.component.html',
   styleUrls: ['./edit-animal.component.css']
 })
 export class EditAnimalComponent implements OnInit {
+  @Input() childSelectedAnimal: Animal;
+  @Output() editCompleteSender = new EventEmitter();
 
-  constructor() { }
+  editCompleteButtonClicked() {
+    this.editCompleteSender.emit();
+  }
 
   ngOnInit() {
   }
