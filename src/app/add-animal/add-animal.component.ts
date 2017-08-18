@@ -17,13 +17,7 @@ export class AddAnimalComponent implements OnInit {
 
   submitForm(species: string, name: string, age: number, diet: string, location: string, caretakersNeeded: number, sex: string, like: string, dislike: string) {
     var newAnimalToAdd = new Animal(species, name, age, diet, location, caretakersNeeded, sex, like, dislike);
-    for (var property in newAnimalToAdd) {
-      if (newAnimalToAdd.hasOwnProperty(property) && property !== undefined) {
-        
-      }
-    }
     this.addAnimalSender.emit(newAnimalToAdd);
-
     this.addAnimal = false;
   }
 
