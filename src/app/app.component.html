@@ -8,6 +8,6 @@
   <br>
   <edit-animal [childSelectedAnimal]="selectedAnimal" (editCompleteSender)="editComplete()"></edit-animal>
   <br>
-  <animal-list [childAnimalList]="masterAnimalList" (editButtonClickedSender)="editAnimal($event)"></animal-list>
+  <animal-list [childAnimalList]="animals" (editButtonClickedSender)="editAnimal($event)"></animal-list>
 
 </div>

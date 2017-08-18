@@ -1,0 +1,15 @@
+{
+  "animals": [
+    {
+      "species": "Elephant",
+      "name": "Lucy",
+      "age": 14,
+      "diet": "Peanuts",
+      "location": "Southside",
+      "caretakersNeeded": 4,
+      "sex": "F",
+      "like": "Burping",
+      "dislike": "Mice"
+    }
+  ]
+}
