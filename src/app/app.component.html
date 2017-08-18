@@ -3,6 +3,6 @@
     <h1>{{title}}</h1>
   </div>
   <add-animal (addAnimalSender)="newAnimal($event)"></add-animal>
-  <animal-list [childAnimalList]="masterAnimalList"></animal-list>
-
+  <animal-list [childAnimalList]="masterAnimalList" (editButtonClickedSender)="editAnimal($event)"></animal-list>
+  <edit-animal [childSelectedAnimal]="selectedAnimal" (editCompleteSender)="editComplete()"></edit-animal>
 </div>

@@ -15,7 +15,17 @@ export class AppComponent {
   ]
 
   newAnimal(newAnimalFromChild: Animal) {
-   this.masterAnimalList.push(newAnimalFromChild);
- }
+    this.masterAnimalList.push(newAnimalFromChild);
+  }
+
+  selectedAnimal = null;
+
+  editAnimal(currentAnimal) {
+    this.selectedAnimal = currentAnimal;
+  }
+
+  editComplete() {
+    this.selectedAnimal = null;
+  }
 
 }
