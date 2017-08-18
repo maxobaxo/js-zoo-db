@@ -1,6 +1,6 @@
 <ul *ngFor="let currentAnimal of childAnimalList">
   <h3>{{currentAnimal.name}}</h3>
-  <!-- <button (click)="editButtonClicked(currentAnimal)">Edit</button> -->
+  <button (click)="editButtonClicked(currentAnimal)">Edit</button>
     <li>{{currentAnimal.species}}</li>
     <li>{{currentAnimal.age}} years old</li>
     <li>Likes: {{currentAnimal.like}}</li>
