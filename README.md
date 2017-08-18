@@ -2,6 +2,39 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+## Planning
+
+1. Configuration/Dependencies
+  * You will need the following things properly installed on your computer.
+    * [Git](https://git-scm.com/)
+    * [Node.js](https://nodejs.org/) (with NPM)
+    * [Angular.js](https://angular.io/)
+    * [Typescript](https://www.typescriptlang.org/)
+    * [Bower](https://bower.io/)
+    * [Angular CLI](https://github.com/angular/angular-cli)
+
+2. Specifications
+  * It can list all animals currently admitted at the zoo.
+  * It can filter the list by age (old or young).
+  * It can allow users to add a newly-admitted animal to the app, along with the new animal's species, name, age, diet, zoo location, number of needed caretakers, sex, one like and one dislike.
+  * It can allow users to edit an animal's name, age, or caretakers.
+
+3. Architectural/Component Outline
+  * Main Page
+    * Add-Animal Component
+      * Conditional statement displaying an 'Add' button or Animal-Submission Form
+    * List-Animal Component
+      * Drop-Down Menu to Filter By Age: All, Young, or Old.
+      * Loop/List through Each Animal, containing Edit-Animal component, which will display 'Edit' button next to each animal.
+
+4. UX/UI
+  * Bootstrap Styling
+
+5. Polish
+  * Look for opportunities to refactor/DRY-up code
+  * Delete any unused templates/components
+  * Flesh-out rest of README
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
