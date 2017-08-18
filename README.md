@@ -49,6 +49,9 @@ In Terminal, type:
 In Browser, type:
   * `Visit the app at http://localhost:4200`
 
+## Known Bugs
+  * Adding a new Animal with empty form fields will create an instance of the Animal class whose attributes' values are empty strings.
+
 ## Technologies Used
   Git, HTML, CSS, JavaScript, Angular, Angular-CLI, Node & NPM, Bower, Bootstrap
 
