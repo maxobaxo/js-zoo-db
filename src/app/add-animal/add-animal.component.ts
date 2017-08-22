@@ -21,6 +21,10 @@ export class AddAnimalComponent implements OnInit {
     this.addAnimal = false;
   }
 
+  cancelForm() {
+    this.addAnimal = false;
+  }
+
   ngOnInit() {
   }
 
