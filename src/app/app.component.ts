@@ -24,6 +24,10 @@ export class AppComponent {
     this.selectedAnimal = currentAnimal;
   }
 
+  cancelEdit() {
+    this.selectedAnimal = null;
+  }
+
   editComplete() {
     this.selectedAnimal = null;
   }
