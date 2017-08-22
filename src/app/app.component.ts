@@ -19,6 +19,7 @@ export class AppComponent {
 
   showAddAnimalForm() {
     this.addAnimal = true;
+    this.selectedAnimal = null;
   }
 
   cancelAddAnimal() {
