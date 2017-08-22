@@ -49,6 +49,10 @@ In Terminal, type:
 In Browser, type:
   * `Visit the app at http://localhost:4200`
 
+## Desired Functionality to Add in the Future
+  * Filter Animals by Species and/or Location
+  * Edit additional attributes of each animal
+
 ## Known Bugs
   * Adding a new Animal with empty form fields will create an instance of the Animal class whose attributes' values are empty strings.
 
