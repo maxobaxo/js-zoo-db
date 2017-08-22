@@ -10,6 +10,7 @@ export class AnimalListComponent implements OnInit {
   @Input() childAnimalList: Animal[];
   @Output() editButtonClickedSender = new EventEmitter();
 
+
   editButtonClicked(currentAnimal) {
     this.editButtonClickedSender.emit(currentAnimal);
   }

@@ -4,7 +4,7 @@
     <h1>{{title}}</h1>
   </div>
 
-  <add-animal (addAnimalSender)="newAnimal($event)"></add-animal>
+  <add-animal [childAddAnimal]="addAnimal" (addAnimalSender)="newAnimal($event)" (addAnimalButtonClickedSender)="showAddAnimalForm()" (cancelAddAnimalSender)="cancelAddAnimal()"></add-animal>
   <br>
   <edit-animal [childSelectedAnimal]="selectedAnimal" (editCompleteSender)="editComplete()" (cancelEditClickedSender)="cancelEdit()"></edit-animal>
   <br>

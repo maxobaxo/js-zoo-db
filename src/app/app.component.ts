@@ -14,14 +14,25 @@ export class AppComponent {
     new Animal('Flamingo', 'Rick', 1, 'Algae & Brine Shrimp', 'Tropical Area', 1, 'M', 'Sleeping', 'Being Startled')
   ]
 
-  newAnimal(newAnimalFromChild: Animal) {
-    this.masterAnimalList.push(newAnimalFromChild);
+  selectedAnimal = null;
+  addAnimal = false;
+
+  showAddAnimalForm() {
+    this.addAnimal = true;
   }
 
-  selectedAnimal = null;
+  cancelAddAnimal() {
+    this.addAnimal = false;
+  }
+
+  newAnimal(newAnimalFromChild: Animal) {
+    this.masterAnimalList.push(newAnimalFromChild);
+    this.addAnimal = false;
+  }
 
   editAnimal(currentAnimal) {
     this.selectedAnimal = currentAnimal;
+    this.addAnimal = false;
   }
 
   cancelEdit() {

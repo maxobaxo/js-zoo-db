@@ -7,22 +7,22 @@ import { Animal } from './../animal.model';
   styleUrls: ['./add-animal.component.css']
 })
 export class AddAnimalComponent implements OnInit {
+  @Input() childAddAnimal: boolean;
   @Output() addAnimalSender = new EventEmitter();
+  @Output() addAnimalButtonClickedSender = new EventEmitter();
+  @Output() cancelAddAnimalSender = new EventEmitter();
 
-  addAnimal = false;
+  addAnimalButtonClicked() {
+    this.addAnimalButtonClickedSender.emit();
+  }
 
-  addNewAnimal() {
-    this.addAnimal = true;
+  cancelForm() {
+    this.cancelAddAnimalSender.emit();
   }
 
   submitForm(species: string, name: string, age: number, diet: string, location: string, caretakersNeeded: number, sex: string, like: string, dislike: string) {
     var newAnimalToAdd = new Animal(species, name, age, diet, location, caretakersNeeded, sex, like, dislike);
     this.addAnimalSender.emit(newAnimalToAdd);
-    this.addAnimal = false;
-  }
-
-  cancelForm() {
-    this.addAnimal = false;
   }
 
   ngOnInit() {

@@ -1,8 +1,8 @@
 <div class="align-center">
-  <div *ngIf="addAnimal===false">
-    <button (click)="addNewAnimal()" class="btn">Add New Animal</button>
+  <div *ngIf="childAddAnimal===false">
+    <button (click)="addAnimalButtonClicked()" class="btn">Add New Animal</button>
   </div>
-  <div *ngIf="addAnimal===true" class="well">
+  <div *ngIf="childAddAnimal===true" class="well">
     <h2>New Animal</h2>
     <div class="flex-container">
       <div class="flex-item">
