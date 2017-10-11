@@ -6,6 +6,25 @@ By Max Scher
 ## Description
 This application allows the staff at Wayward Pines Zoo keep track of all of their animals, cataloging, editing, and filtering all pertinent information for each relevant to the residents of the zoo.
 
+![Homepage](/src/assets/homepage.png)
+
+<details>
+<summary>View Screenshots</summary>
+  <br>
+  Filer by Age:
+  <br>
+  <img src="/src/assets/all_animals.png">
+  <br>
+  <img src="/src/assets/young_animal.png">
+  <br><br>
+  Add Animal:
+  <br>
+  <img src="/src/assets/add_animal_form.png">
+  <br>
+  <img src="/src/assets/added_animal.png">
+  <br>
+</details>
+
 ## Planning
   1. Configuration/Dependencies
     * You will need the following things properly installed on your computer.
