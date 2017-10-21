@@ -14,7 +14,6 @@
     "start": "node server.js",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
-    "preinstall": "bower install",
     "postinstall": "ng build --aot -prod",
     "deploy": "git push heroku master"
   },
